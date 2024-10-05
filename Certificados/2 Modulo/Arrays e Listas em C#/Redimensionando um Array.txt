@@ -2,8 +2,9 @@
 
 👉 Mas como aumenta-lo em tempo de execução?
 	-> Usar a classe "Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2)" = Dobra a capacidade dele
-👉 O resize, cria uma cópia do array, com a nova capacidade passada e assim copiar os elementos antigos para o novo 
+👉 O RESIZE, cria uma cópia do array, com a nova capacidade passada e assim copiar os elementos antigos para o novo 
 
+👉🏼 O comando Copy apenas realiza a cópia sem aumentar a capacidade
 👉 Para copiar um Array para o outro:
 	-> Usar a classe "Array.Copy()", exemplo de código:
 

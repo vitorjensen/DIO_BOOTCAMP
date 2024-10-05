@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = exemplofundamentos
-build_property.ProjectDir = R:\DIO-Bootcamp\Certificados\1 Módulo\Configuração de Ambiente e IDE's\exemplofundamentos\
+build_property.ProjectDir = /Users/vitorjensen/DIO_BOOTCAMP/Certificados/1 Módulo/Configuração de Ambiente e IDE's/exemplofundamentos/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
