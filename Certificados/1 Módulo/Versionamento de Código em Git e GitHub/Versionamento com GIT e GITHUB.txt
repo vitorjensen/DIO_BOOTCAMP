@@ -1,0 +1,117 @@
+########## Versionamento com GIT e GITHUB ##########
+
+👉 O que é Versionamento de código:
+--> Conceitualmente, é a divisão das tarefas onde cada um pode trabalhar de sua casa, de forma compartilhada.
+--> No final pode ser mesclado os dois trabalhos.
+--> Pode haver conflitos entre os controles e organização de versão caso seja necessário buscar algum trecho específico
+
+👉 Sistema de Controle de Versão:
+Controlam as versões de um arquivo ao longo do tempo
+--> Registra o histórico de atualizações de um arquivo
+--> Gerencia quais foram as alterações, a data, autor, etc...
+--> Organização, controle e segurança.
+
+	- Dentre os Sistemas de Controle de Versão (VCS), temos:
+👉 VCS Centralizado (CVCS)
+Ex: CVS, Subversion.
+
+user ------------------ Servidor Central ---------------------- user 2
+ |				|				  |
+ |			Banco de Versões 			  |
+Arquivo <-----------------| Versão 3 |-------------------------> Arquivo
+			  | Versão 2 |
+			  | Versão 1 |
+
+=> O Servidor Central armazena as versões, os dois usuários conectados ao servidor.
+=> Se o Servidor Central ficar fora do ar, os usuários perdem as alterações não sendo possível salvar as modificações no servidor.
+=> Precisa ser feito o BKP
+
+👉 VCS Distribuído (DVCS)
+Ex: Git, Mercurial
+
+user ------------------ Servidor Central ---------------------- user 2
+ |				|				  |
+ |			Banco de Versões 			  |
+Arquivo <-----------------| Versão 3 |-------------------------> Arquivo
+Versão 3		  | Versão 2 |				 Versão 3
+Versão 2		  | Versão 1 |				 Versão 2
+Versão 1 <-----------------------------------------------------> Versão 1
+
+=> Os usuários não dependem da disponibilidade do servidor para realizar e salvar as alterações
+=> Cada clone é um BKP
+=> Possibilita um fluxo de trabalho flexível
+=> Possibilita o trabalho sem conexão da rede
+
+########## O que é GIT? ##########
+--> É um Sistema de Controle de Versão Distribuído
+--> Gratuito e Open Source
+--> Ramificações (Branching) e fusões (merging) eficientes
+--> Leve e rápido
+(Link para docs: hhtp://git-scm.com/)
+--> Surgiu com o projeto Kernel do Linux em 2002, quando começa usar o BitKeeper, um DVCS propietário.
+--> Em 2005, Linux Torvalds cria sua própria ferramenta, o GIT.
+
+👉 Fluxo básico no GIT (Comandos):
+--> "git clone" = Clona o repositório existente e cria um novo em uma pasta local.
+--> "git commit" = Após criado uma nova versão do projeto, utilizar o git commit para salvar as alterações no repositório.
+--> "git pull" = Conferir se o outro desenvolvedor finalizou suas alterações, após, executar o comando "git pull" para PUXAR as alterações do repositório REMOTO para seu repositório LOCAL.
+--> "git push" = Envia as novas informações do seu repositório local para o repositório remoto, atualizando-o. 
+
+
+########## O que é GITHUB? #########
+--> Plataforma de Hospedagem de código para controle de versão com GIT, e colaboração.
+--> Utilizado mundialmente.
+--> Mascote "Octocat".
+
+########## Comandos GIT para criação de um nome de usuário e email para os projetos ##########
+--> git config user.name "nome_do_usuario" = Cria um nome para o usuário
+--> git config user.email "email_do_usuario" = Cria um email para o usuário
+--> git config init.DefaultBranch = Mostra a Branch que está configurada
+--> git config --global init.DefaultBranch "nome_da_branch" = Cria uma branch globalmente
+
+########## Autenticando via Token #########
+1º Passo: 
+	- Criar um repositório no GITHUB
+2º Passo:
+	- Selecionar a opção HTTPS e copiar o link sugerido ("https://github...")
+3º Passo:
+	- Usar o comando "git clone" para clonar o repositório criado em seu diretório selecionado na máquina.
+(OBS: É possível que ao criar um clone, seja necessário incluir os dados de autenticação como usuário e senha)
+
+4º Passo:
+	- Autenticar clonagem via TOKEN. Seguir o caminho: ícone do seu profile --> settings --> developer settings --> Tokens Classics --> Generate new token classic
+5º Passo: 
+	- Configurar as informações do token --> Clicar no botão de gerar o Token e copia-lo 
+6º Passo: 
+	- Ao usar git clone, colar a chave TOKEN no campo de PASSWORD.
+
+########## Salvar token automaticamente na máquina ##########
+--> "git config --global credential.helper store = Comando para habilitar autenticação com token automática
+
+########## Clonando repositório utilizando a conexão SSH ##########
+--> É gerado um par de chaves 
+1º Passo:
+	--> "ls -al ~/.ssh" = Verifica se há alguma chave SSH 
+2º Passo:
+        --> "ssh-keygen -t ed25519 -C "your_email@example.com"" = Comando para gerar a chave e armazena-la no diretório específico.
+3º Passo:
+	--> Pressionar ENTER
+4º Passo: 
+	--> Passar uma passphrase para segurança:
+	"minhachavessh"
+
+5º Passo: Ativar o SSH Agent 
+	--> 
+ eval "$(ssh-agent -s)"  
+
+6º Passo: 	
+	--> Adicionar essa mesma chave para o SSH Agent utilizando o comando abaixo:
+ssh-add ~/.ssh/id_ed25519
+
+7º Passo:
+	--> Inserir a passphrase criada: "minhachavessh"
+
+
+
+ 
+

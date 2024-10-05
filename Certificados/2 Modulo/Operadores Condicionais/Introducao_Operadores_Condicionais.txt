@@ -1,0 +1,17 @@
+########## Operador Condicional ##########
+
+👉 O operador condicional possibilita mudar o fluxo de execução de seu código, indicando um caminho que ele deve percorrer.
+
+👉 IF aninhado = Quando você adiciona uma nova condição a ele possíveis de percorrer, um terceiro caminho por exemplo.
+
+👉 Estrutura condicional da mesma forma que o IF, mais conciso para fazer verificações 
+
+👉 Comando "Console.ReadLine();" = Possibilita digitar pelo terminal e passar valores
+
+👉 O SWITCH pode substituir IF's aninhados
+
+########## Operadores Lógicos ##########
+
+
+
+

@@ -1,0 +1,21 @@
+########## TIPOS DE DADOS ########### 
+
+-> Tipo de dados caracteriza uma informação de acordo com que ela representa. Ex:
+
+	- (INT) = Representa um número sem casas decimais, como ID's ou Idades.
+	- (STRING) = Cadeia de caracteres, como por exemplo textos, incluindo números, letras e caracteres especiais. 
+	- (CHAR) = Caractere Unicode.
+	- (BOOL) = True or False.
+	- (UINT) = Representa números inteiros mas que não são negativos.
+	- (LONG) = Representa números grandes em que o INT não serve.
+	- (DECIMAL) = Representa valores decimais como valores monetários, é mais preciso.
+	- (DOUBLE) = Mais preciso que o FLOAT
+	- (FLOAT)
+
+-> VARIÁVEL = Pedaço da memória que pode armazenar um valor, e trabalhar com ele no decorrer do código. Apresentando o seu tipo, nome 
+e o conteúdo.
+
+-> DateTime = Pega o horário e data atual da máquina
+-> DateTime.Now.AddDays(5); = Adiciona dias a data atual da máquina
+-> Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));
+-> HH:mm = Tira minutos e segundos

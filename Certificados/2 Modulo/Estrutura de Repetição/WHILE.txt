@@ -1,0 +1,30 @@
+########## ESTRUTURA DE EXECUÇÃO "WHILE" ##########
+->Cuidado para não cair em um loop infinito utilizando o WHILE
+->Incrementa no final do laço
+->O While considera primeira a condição, se ela for falsa, ele nem continua a execução
+->BREAK; (Interrompe o fluxo de execução do laço independentemente se a condição e verdadeira ou não).
+
+## Como exemplo de loop infinito:
+
+int numero = 10;
+int aux_contador = 0;
+
+/*Console.WriteLine($"{numero} X 1 = {numero * 1}");*/
+
+while(aux_contador <= 10){
+ Console.WriteLine($"{numero} X {aux_contador} = {numero * aux_contador}");
+}
+
+## Jeito certo:
+
+
+int numero = 10;
+int aux_contador = 0;
+
+/*Console.WriteLine($"{numero} X 1 = {numero * 1}");*/
+
+while(aux_contador <= 10){
+ Console.WriteLine($"{aux_contador + 1}° Execução: {numero} X {aux_contador} = {numero * aux_contador}");
+aux_contador++;
+
+}

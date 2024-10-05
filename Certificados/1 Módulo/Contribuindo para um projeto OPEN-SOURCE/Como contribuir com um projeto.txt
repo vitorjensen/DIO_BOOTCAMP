@@ -1,0 +1,43 @@
+########## ALGUNS PASSOS REALIZADOS NA AULA PARA TRABLHAR COM A CONTRIBUIÇÃO #########
+
+1º PASSO: 
+	-> Faça um FORK do repositório que deseja contribuir
+
+2º PASSO:
+	-> Faça um clone localmente utilizando o método HTTPS ou SSH do repositório
+
+3º PASSO: Utilize o REMOTE UPSTREAM para manter seu repositório local atualizado
+
+	-> "git remote add upstream <link_https_do_repositorio>"
+	-> "git pull upstream main" = Para baixar e mesclar as alterações no seu repositório local com base na Branch "Main" desse 
+	repositório em questão
+
+4º PASSO: Crie uma nova Branch renomeando-a
+	-> "$ git checkout -b feat/community/vitorjensen"
+
+######### Código do primeiro Markdown ########
+
+# Vitor Jensen
+## Conecte-se comigo
+[![Linkedin](https://img.shields.io/badge/Linkedin-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/vitorjensen/)
+
+[![Linkedin](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=0E76A8)](https://www.instagram.com/in/vitorjensen/)
+
+## Habilidades
+
+| Preview | 
+|:-------:|
+| ![Most Used Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=vitorjensen&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
+
+## Sobre:
+![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=vitorjensen&repo=DIO-LAB-OPEN-SOURCE&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/vitorjensen/DIO-LAB-OPEN-SOURCE)
+
+
+######### Fazendo o Commit do vjensen.md ##########
+
+--> "git status" = para verificar as pendências
+--> "git add community/vjensen.md" = comando para adicionar o arquivo em "Stage in Area"
+--> "git commit -m"feat: add vitorjensen profile" = Para criar um commit junto com uma mensagem
+--> "git push origin feat/community/vitorjensen" = Comando para fazer o push para o repositório Remoto.
+
+

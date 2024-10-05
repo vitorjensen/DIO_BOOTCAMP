@@ -1,0 +1,6 @@
+########## Operadores Aritméticos ##########
+
+👉 São operadores usados na matemática, e que é usado no C# para realizar cálculos.
+
+
+👉 Classe MATH = Possibilita realizar operações mais complexas no C#

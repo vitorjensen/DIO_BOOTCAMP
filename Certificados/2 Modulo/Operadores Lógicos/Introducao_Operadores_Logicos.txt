@@ -1,0 +1,12 @@
+#### Operadores Lógicos ####
+
+-> Realiza verificações baseado no Operador condicional IF 
+👉 OR ("OU") -> Símbolo: ||
+	- Ele verifica se AO MENOS UMA condição é verdadeira
+
+👉 AND ("E") -> Símbolo: &&
+	- Ele só retornará "Verdadeiro" se TODAS condições forem verdadeiras.
+
+👉 NOT ("NÃO") -> Símbolo: !
+	- Faz a inversão de um valor Booleano, se entra TRUE, sai FALSE e vice-versa
+

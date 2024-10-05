@@ -1,0 +1,9 @@
+########## FOREACH ##########
+
+ 👉 Vantagem: Muito mais simples
+ 👉 Desvantagem: Dificulta o uso de um contador
+ 👉 No FOR, você precisa declarar o contador e até onde ele vai. No FOREACH não, ele inclui automaticamente os elementos de um array
+foreach(int valor in arrayInteiros)
+{
+
+}

@@ -1,0 +1,20 @@
+👉 Um array não pode aumentar nem diminuir em tempo de execução, sempre será o mesmo valor
+
+👉 Mas como aumenta-lo em tempo de execução?
+	-> Usar a classe "Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2)" = Dobra a capacidade dele
+👉 O resize, cria uma cópia do array, com a nova capacidade passada e assim copiar os elementos antigos para o novo 
+
+👉 Para copiar um Array para o outro:
+	-> Usar a classe "Array.Copy()", exemplo de código:
+
+int[] arrayInteiros = new int[4];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+arrayInteiros[3] = 1;
+
+int[] arrayInteirosDobrado = new int[arrayInteiros.Lenght * 2];
+Array.Copy(arrayInteiros, arrayInteirosDobrados, arrayInteiros.Lenght);
+
+

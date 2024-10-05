@@ -1,0 +1,26 @@
+########## Introdução ##########
+--> Quando não é atribuído um TIPO no lado ESQUERDO da variável, significa que você esta retornando
+uma variável já existente.
+
+👉 Operadores de Atribuição:
+	- Sinal de "=" = Operador de atribuição de valor à uma variável
+	- A atribuição de valores à uma variável acontece da DIREITA para a ESQUERDA
+					(int b = 10;)
+					(int c = 20;)				
+					(int a = b + c)
+👉 Combinando operadores:
+	- "+=" = Essa combinação de operadores, pega o valor da variável existente e acrescenta mais unidades. Exemplo:
+					
+					(c = 30;)--> É a mesma coisa que: 
+					(c += 5;)-->	(c = c + 5)	
+👉 Convertendo tipos de variáveis:
+	-> CAST/CASTING = É a conversão do TIPO de dados de uma variável, para diferente formas. 
+	-> Utiliza a classe "Convert.ToInt32" para converter STRING para INT.
+	-> qualquer_tipo_de_variavel.Parse("5"); = Também converte uma STRING para um INTEIRO  
+
+👉 Ordem dos operadores:
+	- O C# utiliza a regra matemática para entender a ordem de operações
+
+👉 Conversão de Maneira segura:
+	-
+ 

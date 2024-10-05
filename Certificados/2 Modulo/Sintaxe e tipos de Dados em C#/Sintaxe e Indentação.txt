@@ -1,0 +1,94 @@
+######### Entendendo a estrutura de um projeto #######
+
+
+--> .csproj = Extensão para o arquivo de Projeto do C#
+	-> Possui os metadados
+	-> Utiliza o XML (Uso de tags)
+👉 Tags do arquivo
+--> <OutputType> = Saída ao compilar ao projeto, que pode ser um executável ou um projeto
+
+--> Pasta OBJ = Armazena arquivos de Debug
+
+
+######### Conceito de Classe #########
+
+--> Está relacionada ao conceito de Abstração na programação Orientada a Objetos
+
+👉 PILARES DA ABSTRAÇÃO:
+--> Abstração:
+	- Pegar um objeto do mundo real e transforma-lo o objeto na programação 
+--> Características da classe:
+
+1º ATRIBUTOS:
+	- Nome da classe
+	- Nome do TIPO da classe (String, int, float...)
+______________________________	
+|	    Pessoa	     |
+|____________________________|
+| + Nome: String	     |
+| + idade: int	             | ----> Abstração do código
+|____________________________|
+| + apresentação()	     |
+|____________________________|
+
+2º AÇÕES:
+	- Método = Ação que a classe irá fazer
+ 
+--> As classes representam a construção do OBJETO. É um conceito representado do mundo real.
+
++++++ Convenção do C# +++++
+
+--> A cada nova palavra escrita para nomenclatura, colocar com letra MAIÚSCULA
+
+--> Pasta MODELS: Armazena os arquivos de classes (.cs) 
+
+
+######### GET e SET #########
+
+--> GET: Pega o valor da variável.
+--> SET: Atribui o valor (Representado pelo sinal de "=").
+--> Função ou Método = nome_do_metodo(aqui_vai_o_argumento_do_metodo);
+--> Namespace = Representa um caminho lógico para se organizar classes que podem estar dentro de um mesmo domínio (Caminho virtual) 
+--> Palavra reservadas = Palavras exclusivas e que não podem ser usadas como nomes para variáveis por exemplo. Pode haver conflitos com o C#.
+
+--> dotnet run = comando para executar o projeto
+
+######### Explorando sintaxes ##########
+--> O uso do "." = Atribui ações, propriedades, métodos e informações para a variável.
+
+--> Uso da quebra de linha = " + $ "
+
+######### Convenções ##########
+
+👉 SINTAXE = Conjunto de regras que é necessário escrever no C#, se não o código não é compilado
+
+👉 Case:
+
+- Padrão de escrita para nomes
+- Se não seguir as convenções, o código será compilado normalmente
+
+--> camelCase = Declarar varáveis, a primeira letra começa minúscula
+
+--> PascalCase = Para nome de Classes, propriedades, métodos...
+
+--> snake_case
+
+--> spinal-case 
+
+👉 Escrita:
+- Abreviações não são recomendadas
+- Nome do arquivo físico ser o mesmo nome da classe.
+
+👉 Nome e variável: 
+- Utilizar o underline caso precise escrever algo diferente
+
+
+
+
+
+
+
+
+
+
+

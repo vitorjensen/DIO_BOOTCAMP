@@ -1,0 +1,67 @@
+########## História do .NET: ##########
+
+	- A Microsoft começou a trabalhar no C# no final dos anos 90
+	- Primeira versão do Framework lançada em 2002
+	- Objetivo de competir com o java
+	- Muitos conceitos do Java voltado para o Windows
+	- Começo do desenvolvimento do .NET (1998)
+👉 1º Versão .NET e C#
+	- .NET 1.0 (Lançado em 2002)
+-> .NET Framework (Versão Legado do .NET, ultima versão 4.8)
+-> .NET Framework 4.6 (Apenas para Windows)
+-> .NET Core 5 (Multiplataforma: Windows, Linux e MacOS)
+	- Facilita o desenvolvimento para outras plataformas
+	- Baratear os custos de servidores e hospedagem
+
+########## Compilador e seu funcionamento ##########
+=> Sempre compilar assim que houver alterações no código
+
+👉 Oque é um compilador?
+	-> Linguagem de "Alto Nível"
+- Linguagem que entendemos e escrevemos nosso código fonte
+Ex: PHP, Python, JavaScript, C#, Perl...
+
+	-> Linguagem de "Baixo Nível"
+- A linguagem da máquina, conceito dos binários. Abstrato.
+Ex: Assembly, Cobol, Pascal, Fortran, Haskell...
+
+R: O compilador é um programa que realiza a conversão de linguagem de alto nível para baixo nível
+
+
+									COMPILER STEPS:
+
+👉 HIGH LEVEL LANGUAGE ==> Lexical Analyzer -> Sintaxe Analyser -> Intermediate code generator -> Code Optmizer -> Code Generator ==> MACHINE CODE
+				|		|			       |		          |		   |
+				|		|			       |	        	  |		   |
+				|		|_________________		            ______________|		   | 
+				|______________________________________ ERROR HANDLER _____________________________________|
+
+		
+
+########## Compilador do .NET ##########
+
+👉 Your C# code --> C# Compiler --> IL Code --> JIT compiler --> Native Code
+    |________________________________|    |_________________________________|
+		   |					|
+	     Compile time			     Runtime	
+
+=> Compile Time: Primeira compilação -> Gera os arquivos ".exe" e ".dll" (Aqui o código compilado não faz diferença em relação a arquitetura da máquina)
+=> Runtime: JIT Compiler ("Just in Time) --> segunda compilação -> Converte o código para a arquitetura específica da máquina -> (Native code)
+
+
+
+########## Compilador e Transpilador ##########
+ => Compilador: É um programa que realiza a conversão de linguagem de alto nível para baixo nível
+	Exemplo: C#, Java...
+ => Transpilador: É a conversão de uma linguagem ou implementação para outra. A sua saída permanece linguagem de alto nível.
+	Exemplo: Typescript para JavaScript
+
+ *Nem toda linguagem é compilada!! 
+ => Linguagem Compilada: São linguagens que o código fonte é traduzido para o código da máquina.
+	Exemplo: C#, Java...
+ => Linguagem interpretada: São linguagens que fazem a leitura e interpretação diretamente do código fonte.
+	Exemplo: JavaScript, PHP...
+
+
+
+

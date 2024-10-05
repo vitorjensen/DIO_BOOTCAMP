@@ -1,0 +1,11 @@
+########## Introdução Array ##########
+
+👉 Importantes para quando você tem coleções de um mesmo objeto
+👉 Estrutura de dados que armazena valores do mesmo tipo e possui um tamanho fixo
+👉 Pode ser chamado de vetor ou matriz
+1. int[] array = new int[4];
+2. int[] array = new int[]{42, 75, 74, 61};
+3. string[] nomes = {"Jan", "Fev"};
+
+-> Posições de um Array: (Índices)
+	-Índices são a posições dos valor de um array, sempre começando com 0.

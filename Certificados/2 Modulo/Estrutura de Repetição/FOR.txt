@@ -1,0 +1,12 @@
+########## ESTRUTURA DE EXECUÇÃO "FOR" ##########
+👉 Como ele é montado?
+	-> Declaração da variável;
+	-> Condição de parada;
+	-> Incremento ou decremento;
+
+##Exemplo de código##
+
+for(aux_contador=0; aux_contador<=10; aux_contador++ ){
+    Console.WriteLine($"{numero} X {aux_contador} = {numero * aux_contador}");
+}
+Console.WriteLine("Fim da execucao");

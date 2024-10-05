@@ -1,0 +1,1 @@
+O DOWhile considera primeiro o conteúdo, depois faz a verificação condicional para verificar o laço

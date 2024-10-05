@@ -1,0 +1,29 @@
+Laço de Repetição ou Estrutura de Repetição:
+-> Uma estrutura fica presa no laço até que a condição seja falsa 
+Ex: Tabuada de um número qualquer
+
+Variável auxiliar a ser usada: "Contador"
+
+X = 10
+CONT = 0
+
+		-------------------
+		Contador é menor ou
+		    igual a 10? 
+		-------------------
+			 |
+			 |
+			Sim
+			 |
+			 |
+		-------------------
+		    X * contador
+		-------------------
+			 |
+		-------------------
+		     contador++
+		-------------------
+
+		-------------------
+			FIM 
+		-------------------

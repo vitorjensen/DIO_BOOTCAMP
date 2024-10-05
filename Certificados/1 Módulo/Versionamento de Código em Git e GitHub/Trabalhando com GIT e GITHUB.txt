@@ -1,0 +1,61 @@
+########## Criando e Clonando Repositórios ##########
+
+--> 1º Passo:
+	- Criar um diretório e entrar dentro dele
+--> 2º Passo: 
+	- Executar comando: "git init"
+	- Será criado um arquivo oculto = .git com as configurações de repositório.
+
+########## Comandos de utilização do GIT ##########
+
+👉 Ao criar um novo repositório, será configurada a branch "main"
+👉 "git clone + URL + nome_do_diretorio" = Clona um diretório com um nome novo.
+👉 "git remote -v" = mostra os repositórios remotos que está vinculado
+👉 "git remote add origin https://github.com/vitorjensen/repo-remoto.git" = Comando para adicionar um repositório local a um remoto.
+👉 "git clone --branch nome_da_branch --single-branch" = Comando para clonar apenas uma branch específica.
+👉 "git status" = Verifica o status da árvore de trabalho e/ou a área de preparação 
+👉 "git add nome_do_arquivo" = Comando para adicionar um arquivo a uma área de preparação 
+👉 "git commit -m"Commit inicial"" = Comando para comitar seguido de uma mensagem.
+👉 "echo resumos/ > .gitignore" = Comando para incluir um arquivo no gitignore 
+👉 "echo > .gitignore" = Deixa o arquivo gitignore vazio.
+👉 "git restore" = Esse comando descarta todas as alterações feitas localmente
+👉 "git reset"
+	 --mixed =  
+	 --soft = Pega os arquivos nos comites anteriores e adicionar os mesmos arquivos na área de preparação
+	 --hard = 
+👉 "git restore --staged" = Remove arquivos da área de preparação
+👉 "git log" = Comando que aponta em qual commit a branch está
+👉 "git merge" = Comando para mesclar as alterações
+👉 "git stash" = Arquiva modificações
+👉 Documentação sobre Markdown no GITHUB (Linguagem de marcação) 
+👉 Site: readme.so para fazer um markdown
+
+########## Passos para migrar as alterações feitas de um repositório local para o remoto ##########
+
+--> 1º Passo: 
+	Criar um repositório vazio no GITHUB
+--> 2º Passo:
+	"git add . " para adicionar todas as alterações do local para o remoto
+--> 3º Passo: 
+	git remote add origin https://github.com/vitorjensen/dio-resumos-git-e-github.git
+--> 4º Passo: Comando PUSH para subir todas as alterações para o repositório REMOTO
+	git push -u origin main
+
+(O comando "git pull" fará o ao contrário, todas as alterações feitas no repositório remoto serão sincronizadas com o repositório local)
+
+
+########## Trabalhando com Branches ##########
+
+-> De maneira simplista, uma Branch (em tradução, "Ramo"), é  uma ramificação do projeto.
+	--> É um ponteiro móvel para um commit no histórico do repositório 
+	--> Quando você cria uma nova branch a partir de outra existente, a nova se inicia apontando para o mesmo commit da Branch que estava quando foi criada.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+########## O que é uma IDE? ##########
+👉 IDE (Integrated Development Environment), é um software que facilita e integra diversas facilidades para a escrita e 
+depuração de código.
+ --> Uso do Intelesense (Autocomplete)
+ Exemplo: Visual Studio (Para: .NET, PHP, NODE, Python, Mobile...)
+--> Não disponível para Linux
+
+########## Visual Studio Code ##########
+
+--> É um editor de texto que facilita o desenvolvimento
+--> É mais leve
+--> Depende de extensões a serem instaladas 
+--> Executado para Linux também
+
+########## RIDER ##########
+
+--> Rico em funcionalidades
+--> Forte integração com o .NET
+--> Atalhos e comandos que aumentam a produtividade
+--> Facilidade em trabalhar com o Unity
+--> É Pago
+
+########## Comandos da aula de criação do primeiro projeto ##########
+
+"dotnet new console"
+-> "console" = Tipo do projeto
+
+"dotnet run"
+-> Compila e executa o código

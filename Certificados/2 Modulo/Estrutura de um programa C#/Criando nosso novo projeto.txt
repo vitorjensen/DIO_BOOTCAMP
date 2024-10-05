@@ -1,0 +1,2 @@
+👉 Baixei a extensão "vscode-solutions" para criar novas soluções, ou seja, agrupar um conjunto de projetos .csproj
+dentro de uma solution . sln, para que eu possa criar um projeto de "MODELO", significando que só há classes. (.Common)

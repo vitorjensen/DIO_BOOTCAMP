@@ -1,0 +1,17 @@
+####### Arquivos de um projeto em .NET ##########
+
+👉 ".csproj" = Contém informações sobre o projeto em especifico (build, debug, versao).
+
+👉 ".sln - Solutions" = Contém informações que carreagam um agrupamento de projetos.
+
+👉 Ao invéz de ficar criando cópias de um mesmo projeto de código para realizar alterações, 
+criar um projeto "em comum" entre as versões, para que seja realizada as modificações.
+ 
+----------------
+|     .sln	|-------------|------------------------------------------|--------------------------------------------|
+----------------	      |						 |					      |
+			      |						 |					      |
+		   -------------------------------	------------------------------------           ------------------------------
+		   .csproj -> Projeto: Efetuar PIX --->	     .csproj -> Projeto: Common	  	<----	.csproj -> Projeto: Pagar DA
+		   -------------------------------	      Classes: - Conta Corrente		       ------------------------------
+							------------------------------------
